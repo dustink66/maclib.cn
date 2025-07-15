@@ -1,6 +1,7 @@
 ---
 import Breadcrumb from '../components/layout/Breadcrumb.astro';
 import Layout from '../layouts/Layout.astro';
+import notFound from '../assets/404.svg?url';
 ---
 
 <Layout
@@ -18,7 +19,7 @@ import Layout from '../layouts/Layout.astro';
       <div class="flex flex-wrap items-center -mx-4">
         <div class="w-full px-4 md:w-5/12 lg:w-6/12">
           <div class="text-center">
-            <img src="/assets/404.svg" alt="image" class="max-w-full mx-auto" />
+            <img src={notFound} alt="image" class="max-w-full mx-auto" />
           </div>
         </div>
         <div class="w-full px-4 md:w-7/12 lg:w-6/12 xl:w-5/12">

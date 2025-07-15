@@ -1,3 +1,7 @@
+---
+import logoWhite from '../assets/logo/logo-white.svg?url';
+import logo from '../assets/logo/logo.svg?url';
+---
 <!-- ====== Forms Section Start -->
 <section class="bg-[#F4F7FF] py-14 lg:py-[90px] dark:bg-dark">
   <div class="container">
@@ -9,8 +13,8 @@
         >
           <div class="mb-10 text-center">
             <a href="/" class="mx-auto inline-block max-w-[160px]">
-              <img src="/assets/logo/logo.svg" alt="logo" class="dark:hidden" />
-              <img src="/assets/logo/logo-white.svg" alt="logo" class="hidden dark:block" />
+              <img src={logo} alt="logo" class="dark:hidden" />
+              <img src={logoWhite} alt="logo" class="hidden dark:block" />
             </a>
           </div>
 

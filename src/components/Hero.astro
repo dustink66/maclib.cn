@@ -1,3 +1,7 @@
+---
+import heroWhite from '../assets/hero/hero-image-white.png?url';
+import heroBlack from '../assets/hero/hero-image-black.png?url';
+---
 <!-- ====== Hero Section Start -->
 <section id="home"
   class="relative overflow-hidden bg-primary pt-[120px] md:pt-[130px] lg:pt-[160px]"
@@ -38,12 +42,12 @@
         <div class="wow fadeInUp relative z-10 mx-auto" data-wow-delay=".25s">
           <div class="mt-16">
             <img
-              src="/assets/hero/hero-image-white.png"
+              src={heroWhite}
               alt="hero"
               class="mx-auto max-w-full rounded-t-xl rounded-tr-xl block dark:hidden hero-float"
             />
             <img
-              src="/assets/hero/hero-image-black.png"
+              src={heroBlack}
               alt="hero"
               class="mx-auto max-w-full rounded-t-xl rounded-tr-xl hidden dark:block hero-float"
             />
