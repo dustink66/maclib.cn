@@ -35,11 +35,13 @@ const menuitems = [
               src={logoWhite}
               alt="logo"
               class="header-logo w-full"
+              data-logo={logo}
+              data-logo-white={logoWhite}
             />
           ) : (
             <>
-              <img src={logo} alt="logo" class="w-full dark:hidden" />
-              <img src={logoWhite} alt="logo" class="w-full hidden dark:block" />
+              <img src={logo} alt="logo" class="w-full dark:hidden header-logo" data-logo={logo} data-logo-white={logoWhite} />
+              <img src={logoWhite} alt="logo" class="w-full hidden dark:block header-logo" data-logo={logo} data-logo-white={logoWhite} />
             </>
           )}
         </a>

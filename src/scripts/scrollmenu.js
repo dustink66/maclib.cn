@@ -3,11 +3,18 @@ const pageLink = document.querySelectorAll(".ud-menu-scroll");
 
 pageLink.forEach((elem) => {
   elem.addEventListener("click", (e) => {
-    e.preventDefault();
-    document.querySelector(elem.getAttribute("href")).scrollIntoView({
-      behavior: "smooth",
-      // offsetTop: 1 - 60, // 注释掉此行，scrollIntoView不支持offsetTop
-    });
+    const href = elem.getAttribute("href");
+    // 只处理锚点跳转
+    if (href && href.startsWith("#")) {
+      e.preventDefault();
+      const target = document.querySelector(href);
+      if (target) {
+        target.scrollIntoView({
+          behavior: "smooth",
+        });
+      }
+    }
+    // 外链或非锚点不做处理，交给浏览器默认行为
   });
 });
 
@@ -22,16 +29,21 @@ function onScroll(event) {
   for (let i = 0; i < sections.length; i++) {
     const currLink = sections[i];
     const val = currLink.getAttribute("href");
-    const refElement = document.querySelector(val);
-    const scrollTopMinus = scrollPos + 73;
-    if (
-      refElement.offsetTop <= scrollTopMinus &&
-      refElement.offsetTop + refElement.offsetHeight > scrollTopMinus
-    ) {
-      document
-        .querySelector(".ud-menu-scroll")
-        .classList.remove("active");
-      currLink.classList.add("active");
+    if (val && val.startsWith('#')) {
+      const refElement = document.querySelector(val);
+      if (!refElement) continue;
+      const scrollTopMinus = scrollPos + 73;
+      if (
+        refElement.offsetTop <= scrollTopMinus &&
+        refElement.offsetTop + refElement.offsetHeight > scrollTopMinus
+      ) {
+        document
+          .querySelector(".ud-menu-scroll")
+          .classList.remove("active");
+        currLink.classList.add("active");
+      } else {
+        currLink.classList.remove("active");
+      }
     } else {
       currLink.classList.remove("active");
     }
