@@ -19,6 +19,7 @@ const { description, title, image } = Astro.props;
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width" />
+    <meta name="baidu-site-verification" content="codeva-demuNeb9pg" />
     <link rel="apple-touch-icon" sizes="180x180" href={favicon} />
     <link rel="icon" type="image/svg" href={favicon} />
     <link rel="manifest" href="/site.webmanifest" />
@@ -115,6 +116,19 @@ const { description, title, image } = Astro.props;
       import "../scripts/scrolltop.js";
       import "../scripts/scrollmenu.js";
       import "../scripts/testimonial.js";
+    </script>
+    <script>
+      var _hmt = _hmt || [];
+      // 百度统计异步加载，防止重复插入
+      (function() {
+        if (document.getElementById('baidu-tj')) return;
+        var hm = document.createElement("script");
+        hm.src = "https://hm.baidu.com/hm.js?cb5e6eb9667da427014486fff28ff7bf";
+        hm.id = "baidu-tj";
+        hm.async = true;
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(hm, s);
+      })();
     </script>
   </body>
 </html>
