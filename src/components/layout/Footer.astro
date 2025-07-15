@@ -1,0 +1,58 @@
+---
+
+
+const footerLinks = [
+  {
+    header: '关于MacLib',
+    links: [
+      { name: '主要功能', href: '/#features', isExternal: false },
+      { name: '用户评价', href: '/#testimonials', isExternal: false },
+    ],
+  },
+  {
+    header: '帮助与支持',
+    links: [
+      { name: '常见问题', href: '/#faq', isExternal: false },
+      { name: '联系我们', href: 'mailto:support@maclib.com', isExternal: true },
+    ],
+  },
+  {
+    header: '相关资源',
+    links: [
+      { name: '下载MacLib', href: 'https://www.maclub.net/appstore/01JZGZ2CMX92WGPFX23K8JP78J', isExternal: true },
+    ],
+  },
+];
+---
+
+<!-- ====== Footer Section Start -->
+<footer
+  class="wow fadeInUp relative z-10 bg-[#090E34]"
+  data-wow-delay=".15s"
+>
+
+  <div class="border-[#8890A4] border-opacity-40 py-8">
+    <div class="container">
+      <div class="flex flex-col md:flex-row justify-between items-center">
+        <span class="text-base text-gray-7 text-center md:text-left w-full md:w-auto mb-2 md:mb-0">
+          {(() => {
+            const startYear = 2025;
+            const currentYear = new Date().getFullYear();
+            return currentYear === startYear
+              ? `© ${startYear} MacLib. All rights reserved.`
+              : `© ${startYear}-${currentYear} MacLib. All rights reserved.`;
+          })()}
+        </span>
+        <a
+          href="https://beian.miit.gov.cn/"
+          class="text-base text-gray-7 hover:text-primary text-center md:text-right w-full md:w-auto"
+          target="_blank"
+          rel="noopener"
+        >
+          浙ICP备19039321号-14
+        </a>
+      </div>
+    </div>
+  </div>
+
+</footer>

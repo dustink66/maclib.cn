@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="_图层_2" data-name="图层 2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 948.69 948.69">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+      }
+
+      .cls-2 {
+        mask: url(#mask);
+      }
+
+      .cls-3 {
+        stroke: #23b5ee;
+        stroke-miterlimit: 18.07;
+        stroke-width: .9px;
+      }
+
+      .cls-3, .cls-4 {
+        fill: #23b5ee;
+      }
+
+      .cls-5 {
+        clip-path: url(#clippath-1);
+      }
+
+      .cls-6 {
+        clip-path: url(#clippath-2);
+      }
+
+      .cls-7 {
+        fill: #fff;
+      }
+
+      .cls-8 {
+        clip-path: url(#clippath);
+      }
+    </style>
+    <clipPath id="clippath">
+      <rect class="cls-1" width="948.69" height="948.69" rx="189.74" ry="189.74"/>
+    </clipPath>
+    <clipPath id="clippath-1">
+      <circle class="cls-1" cx="474.35" cy="474.35" r="381.74"/>
+    </clipPath>
+    <clipPath id="clippath-2">
+      <circle class="cls-1" cx="474.35" cy="474.35" r="381.74"/>
+    </clipPath>
+    <mask id="mask" x="92.61" y="92.61" width="763.47" height="763.47" maskUnits="userSpaceOnUse">
+      <g id="shape_vUzRyBHMOV_mask" data-name="shape vUzRyBHMOV mask">
+        <g>
+          <circle class="cls-7" cx="474.35" cy="474.35" r="374.1"/>
+          <g class="cls-6">
+            <circle class="cls-1" cx="474.35" cy="474.35" r="381.74"/>
+          </g>
+        </g>
+      </g>
+    </mask>
+  </defs>
+  <g id="_图层_1-2" data-name="图层 1">
+    <g id="shape_5tIIsquUMD" data-name="shape 5tIIsquUMD">
+      <g>
+        <g id="shape_dHcrofPhfj" data-name="shape dHcrofPhfj">
+          <g>
+            <rect class="cls-4" x="9.49" y="9.49" width="929.72" height="929.72" rx="189.74" ry="189.74"/>
+            <g class="cls-8">
+              <rect class="cls-1" width="948.69" height="948.69" rx="189.74" ry="189.74"/>
+            </g>
+          </g>
+        </g>
+        <g id="shape_VAcn2vZROb" data-name="shape VAcn2vZROb">
+          <g>
+            <circle class="cls-7" cx="474.35" cy="474.35" r="374.1"/>
+            <g class="cls-5">
+              <circle class="cls-1" cx="474.35" cy="474.35" r="381.74"/>
+            </g>
+          </g>
+        </g>
+        <g class="cls-2">
+          <g id="shape_ZxNvM7MRza" data-name="shape ZxNvM7MRza">
+            <path class="cls-3" d="M555.44,277.65h0c2.17-7.23,6.23-13.36,12.2-18.39,5.93-5.06,12.88-7.59,20.83-7.59h50.28c9.37,0,17.3,3.33,23.81,9.98,6.48,6.69,9.71,14.53,9.71,23.54h0v399.08h-82.72v-320.66c0-1.08-.45-1.63-1.36-1.63s-1.54.36-1.9,1.08h0l-70.84,295.77c-1.81,7.59-5.78,13.72-11.93,18.39-6.11,4.7-12.95,7.05-20.51,7.05h-40.03c-7.59,0-14.35-2.35-20.28-7.05-5.96-4.67-9.83-10.8-11.61-18.39h0l-70.88-293.6c-.36-.72-.98-1.08-1.85-1.08s-1.36.54-1.36,1.63h0v318.49h-50.87v-399.08c0-9.01,3.25-16.85,9.76-23.54,6.48-6.66,14.41-9.98,23.81-9.98h49.74c8.28,0,15.4,2.53,21.37,7.59,5.93,5.03,9.8,11.16,11.61,18.39h0l76.8,319.03,76.21-319.03Z"/>
+          </g>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>
