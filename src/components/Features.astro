@@ -1,50 +1,106 @@
 ---
-import icon01 from '../assets/features/icon-01.svg?url';
-import icon02 from '../assets/features/icon-02.svg?url';
-import icon03 from '../assets/features/icon-03.svg?url';
-import icon04 from '../assets/features/icon-04.svg?url';
+import iconSystem from '../assets/features/icon-system.svg?url';
+import iconSecurity from '../assets/features/icon-security.svg?url';
+import iconNetwork from '../assets/features/icon-network.svg?url';
+import iconHosts from '../assets/features/icon-hosts.svg?url';
+import iconApps from '../assets/features/icon-apps.svg?url';
+import iconBrew from '../assets/features/icon-brew.svg?url';
+import iconPdf from '../assets/features/icon-pdf.svg?url';
+import iconClean from '../assets/features/icon-clean.svg?url';
+import iconQuick from '../assets/features/icon-quick.svg?url';
+import iconHotkey from '../assets/features/icon-hotkey.svg?url';
+import iconSign from '../assets/features/icon-sign.svg?url';
+import iconWeixin from '../assets/features/icon-weixin.svg?url';
 const features = [
   {
-    icon: icon01,
+    icon: iconSystem,
+    title: '系统信息',
+    description:
+      '提供整洁的系统概览卡片，CPU/内存/磁盘/网络状态一目了然，排障必备。',
+  },
+  {
+    icon: iconSecurity,
+    title: '安全修复',
+    description:
+      '一键开启"任何来源"，清理应用Quarantine属性，修复"应用已损坏"提示。',
+  },
+  {
+    icon: iconNetwork,
+    title: '网络修复',
+    description:
+      'DNS缓存刷新、网络服务重置、代理设置等常用网络修复动作，解决联网问题。',
+  },
+  {
+    icon: iconHosts,
+    title: 'Hosts管理',
+    description:
+      '可视化hosts配置切换与编辑，自动备份管理，支持一键回滚。',
+  },
+  {
+    icon: iconApps,
+    title: '应用管理',
+    description:
+      '应用清单、搜索、详情查看，快速定位和管理系统应用。',
+  },
+  {
+    icon: iconBrew,
+    title: 'Homebrew管理',
+    description:
+      '可视化安装流程与镜像切换，包管理列表与搜索，自动处理软链接。',
+  },
+  {
+    icon: iconPdf,
+    title: 'PDF工具箱',
+    description:
+      '合并、拆分、压缩、提取图片等办公高频操作，整合为可视化卡片。',
+  },
+  {
+    icon: iconClean,
+    title: '存储清理',
+    description:
+      '一键清理Xcode缓存、临时文件、旧日志等大体积目录，释放空间。',
+  },
+  {
+    icon: iconQuick,
+    title: '快捷操作',
+    description:
+      '显示隐藏文件、重建图标缓存等常用系统命令，降低命令行门槛。',
+  },
+  {
+    icon: iconHotkey,
+    title: '快捷键启动',
+    description:
+      '自定义快捷键到应用/脚本的入口，一键启动常用工具。',
+  },
+  {
+    icon: iconSign,
+    title: 'IPA签名',
+    description:
+      '集成zsign包装器，自动解包/签名/重打包，兼容旧P12证书。',
+  },
+  {
+    icon: iconWeixin,
     title: '微信多开',
     description:
       '一键实现微信多开，支持多个账号同时登录，安全稳定。',
-  },
-  {
-    icon: icon02,
-    title: 'IPA签名',
-    description:
-      '支持IPA文件签名，方便自定义应用安装，兼容多种证书。',
-  },
-  {
-    icon: icon03,
-    title: '应用管理',
-    description:
-      '便捷的应用复制、删除、修复等管理功能，提升效率。',
-  },
-  {
-    icon: icon04,
-    title: '核心功能免费',
-    description:
-      '所有核心功能免费，无广告无捆绑，部分高级功能未来可能收费。',
   },
 ];
 ---
 
 <!-- ====== Features Section Start -->
-<section id="features" class="pt-20 pb-8 lg:pt-[120px] lg:pb-[70px] dark:bg-dark">
+<section id="features" class="pt-20 pb-8 dark:bg-dark">
   <div class="container">
     <div class="-mx-4 flex flex-wrap">
       <div class="w-full px-4">
         <div class="mb-12 mx-auto max-w-[485px] lg:mb-[70px] text-center">
           <span class="mb-2 block text-lg font-semibold text-primary">
-            主要功能
+            12大功能模块
           </span>
-          <h2 class="mb-3 text-3xl font-bold text-dark dark:text-white sm:text-4xl md:text-[40px] md:leading-[1.2]">
-            MacLib为你带来高效体验
+          <h2 class="mb-3 text-3xl text-dark dark:text-white sm:text-4xl md:text-[40px] md:leading-[1.2]">
+            一站式解决Mac用户痛点
           </h2>
           <p class="text-base text-body-color dark:text-dark-6">
-            覆盖日常办公与开发场景，助力Mac用户提升效率。
+            覆盖日常办公与开发场景，统一入口，操作可视化，助力Mac用户提升效率。
           </p>
         </div>
       </div>
@@ -52,7 +108,7 @@ const features = [
     <div class="-mx-4 flex flex-wrap">
       {
         features.map((feature) => (
-          <div class="w-full px-4 md:w-1/2 lg:w-1/4">
+          <div class="w-full px-4 md:w-1/2 lg:w-1/3">
             <div class="wow fadeInUp group mb-12" data-wow-delay=".1s">
               <div
                 class="relative z-10 mb-10 flex h-[70px] w-[70px] items-center justify-center rounded-[14px] bg-primary"
@@ -60,7 +116,7 @@ const features = [
                 <span
                   class="absolute top-0 left-0 -z-[1] mb-8 flex h-[70px] w-[70px] rotate-[25deg] items-center justify-center rounded-[14px] bg-primary bg-opacity-20 duration-300 group-hover:rotate-45"
                 ></span>
-                <img src={feature.icon} alt="icon" />
+                <img src={feature.icon} alt="icon" class="w-10 h-10" />
               </div>
               <h4 class="mb-3 text-xl font-bold text-dark dark:text-white">
                 {feature.title}

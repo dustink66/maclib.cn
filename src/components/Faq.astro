@@ -2,27 +2,27 @@
 const faqs = [
   {
     title: "MacLib支持哪些系统？",
-    description: "MacLib支持macOS 11.0及以上版本，兼容Apple Silicon和Intel芯片。",
+    description: "MacLib支持macOS 11.0及以上版本，兼容Apple Silicon和Intel芯片，跨架构通用。",
   },
   {
-    title: "微信多开功能安全吗？",
-    description: "微信多开仅在本地复制应用，不会上传或泄露任何用户数据，完全安全。",
+    title: "MacLib有哪些核心功能？",
+    description: "包含系统信息、安全修复、网络修复、Hosts管理、应用管理、Homebrew管理、PDF工具箱、存储清理、快捷操作、快捷键启动、IPA签名等。",
   },
   {
-    title: "IPA签名需要什么证书？",
-    description: "支持个人开发者证书、企业证书等多种类型，签名过程简单易用。",
+    title: "IPA签名功能有什么优势？",
+    description: "集成zsign包装器，自动解包/签名/重打包，兼容旧P12证书（如RC2-40-CBC），内置OpenSSL 1.1.1通用静态库，支持arm64/x86_64。",
   },
   {
     title: "软件核心功能免费吗？",
-    description: "MacLib核心功能永久免费，无广告、无捆绑。部分高级功能未来可能收费。",
+    description: "MacLib核心功能永久免费，无广告、无捆绑。部分高级功能未来可能收费，但基础功能始终免费。",
   },
   {
     title: "如何获取最新版本？",
-    description: "可在官网随时下载最新版，或关注更新提示。",
+    description: "可在官网随时下载最新版，当前版本v1.0.2，或关注应用内更新提示。",
   },
   {
     title: "遇到问题如何反馈？",
-    description: "可通过官网或社区反馈遇到的问题，我们会及时处理。",
+    description: "可通过官网 https://www.maclib.cn 提交问题或建议，我们会及时处理。",
   },
 ]
 ---
@@ -30,7 +30,7 @@ const faqs = [
 <!-- ====== Faq Section Start -->
 <section
   id="faq"
-  class="relative z-20 overflow-hidden bg-white dark:bg-dark pt-20 pb-8 lg:pt-[120px] lg:pb-[50px]"
+  class="relative z-20 overflow-hidden bg-white dark:bg-dark pt-20 pb-8"
 >
   <div class="container mx-auto">
     <div class="flex flex-wrap -mx-4">
@@ -39,7 +39,7 @@ const faqs = [
           <span class="block mb-2 text-lg font-semibold text-primary">
             常见问题
           </span>
-          <h2 class="text-dark dark:text-white mb-3 text-3xl leading-[1.2] font-bold sm:text-4xl md:text-[40px]">
+          <h2 class="text-dark dark:text-white mb-3 text-3xl leading-[1.2] sm:text-4xl md:text-[40px]">
             常见问题解答
           </h2>
           <p class="mx-auto max-w-[485px] text-base text-body-color dark:text-dark-6">
@@ -71,7 +71,7 @@ const faqs = [
                     </svg>
                   </div>
                   <div class="w-full">
-                    <h3 class="mb-6 text-xl font-semibold text-dark dark:text-white sm:text-2xl lg:text-xl xl:text-2xl">
+                    <h3 class="mb-6 text-xl text-dark dark:text-white sm:text-2xl lg:text-xl xl:text-2xl">
                       {faq.title}
                     </h3>
                     <p class="text-base text-body-color dark:text-dark-6">
@@ -106,7 +106,7 @@ const faqs = [
                     </svg>
                   </div>
                   <div class="w-full">
-                    <h3 class="mb-6 text-xl font-semibold text-dark dark:text-white sm:text-2xl lg:text-xl xl:text-2xl">
+                    <h3 class="mb-6 text-xl text-dark dark:text-white sm:text-2xl lg:text-xl xl:text-2xl">
                       {faq.title}
                     </h3>
                     <p class="text-base text-body-color dark:text-dark-6">
